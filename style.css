@@ -1,0 +1,610 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(98, 83, 83);
+    font-family: sans-serif;
+    text-align: center;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 15px 20px 10px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(200, 173, 173);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content h1{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 300;
+    line-height: 25px;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba( 0,0,0,0.65),rgba(0,0,0,0.65)),url(background1.1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.bannerS{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba( 0,0,0,0.60),rgba(0,0,0,0.60)),url(background2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.contents{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+.contents h1{
+    font-size: 20px;
+    margin-top: 50px;
+    list-style: none;
+}
+.contentss ul li{
+    margin: 20px auto;
+    list-style: none;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+.bannerW{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.contenta p{
+    margin: auto;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+.contentw ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 60px;
+    position: relative;
+}
+.contentw h1{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.bannerA{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(200, 173, 173);
+    background-size: cover;
+    background-position: center;
+}
+.contenta{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+.contenta p{
+    margin: 20px auto;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+.contenta h1{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.contenta h2{
+    font-size: 20px;
+    margin-top: 10px;
+}
+button{
+    display: block;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(200, 173, 173);
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+}
+span{
+    background: rgb(200, 173, 173);
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.bannerC{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba( 0,0,0,0.55),rgba(0,0,0,0.55)),url(background8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@media only screen and (min-width:1000px){
+    .body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(98, 83, 83);
+        font-family: sans-serif;
+        text-align: center;
+    }
+    .navbar{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-weight: bold;
+    }
+    .navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: rgb(200, 173, 173);
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+    .content h1{
+        font-size: 50px;
+        margin-top: 80px;
+    }
+    .content p{
+        margin: 40px auto;
+        font-weight: 400;
+        line-height: 25px;
+        font-size: xx-large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+    .banner{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba( 0,0,0,0.65),rgba(0,0,0,0.65)),url(background1.1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .logo{
+        width: 200px;
+        cursor: pointer;
+    }
+    .bannerS{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba( 0,0,0,0.60),rgba(0,0,0,0.60)),url(background2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .bannerW{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-color: linear-gradient(rgba( 0,0,0,0.55),rgba(0,0,0,0.55)),rgba(200, 173, 173);
+    }
+    .bannerAP{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba( 0,0,0,0.55),rgba(0,0,0,0.55)),url(background9.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .bannerA{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba( 0,0,0,0.55),rgba(0,0,0,0.55)),url(background13.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .bannerC{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba( 0,0,0,0.55),rgba(0,0,0,0.55)),url(background8.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .contents{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+    .contents h1{
+        font-size: 40px;
+        margin-top: 80px;
+        list-style: none;
+    }
+    .contentss ul li{
+        margin: 20px auto;
+        list-style: none;
+        font-weight: 400;
+        line-height: 25px;
+        font-size: xx-large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+    button{
+        display: block;
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid rgb(200, 173, 173);
+        background: transparent;
+        color: black;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        
+    }
+    span{
+        background: rgb(200, 173, 173);
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    button:hover span{
+        width: 100%;
+    }
+    button:hover{
+        border: none;
+    }
+    .contenta{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+    .contenta p{
+        margin: auto;
+        font-weight: 400;
+        line-height: 25px;
+        font-size: larger;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+    .contentw ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 60px;
+        position: relative;
+    }
+}
+@media only screen and (min-width:320px){
+    .body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(98, 83, 83);
+        font-family: sans-serif;
+        text-align: center;
+    }
+    .navbar{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        font-weight: bold;
+    }
+    .navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: rgb(200, 173, 173);
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+    .content h1{
+        font-size: 50px;
+        margin-top: 80px;
+    }
+    .content p{
+        margin: 40px auto;
+        font-weight: 400;
+        line-height: 25px;
+        font-size: xx-large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+    .banner{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba( 0,0,0,0.65),rgba(0,0,0,0.65)),url(background1.1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .logo{
+        width: 200px;
+        cursor: pointer;
+    }
+    .bannerS{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba( 0,0,0,0.60),rgba(0,0,0,0.60)),url(background2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .bannerW{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-color: linear-gradient(rgba( 0,0,0,0.55),rgba(0,0,0,0.55)),rgba(200, 173, 173);
+    }
+    .bannerAP{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba( 0,0,0,0.55),rgba(0,0,0,0.55)),url(background9.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .bannerA{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba( 0,0,0,0.55),rgba(0,0,0,0.55)),url(background13.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .bannerC{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba( 0,0,0,0.55),rgba(0,0,0,0.55)),url(background8.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .contents{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+    .contents h1{
+        font-size: 20px;
+        margin-top: 80px;
+        list-style: none;
+    }
+    .contentss ul li{
+        margin: 20px auto;
+        list-style: none;
+        font-weight: 400;
+        line-height: 25px;
+        font-size: xx-large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+    button{
+        display: block;
+        width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid rgb(200, 173, 173);
+        background: transparent;
+        color: black;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        
+    }
+    span{
+        background: rgb(200, 173, 173);
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    button:hover span{
+        width: 100%;
+    }
+    button:hover{
+        border: none;
+    }
+    .contenta{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+    .contenta p{
+        margin: auto;
+        font-weight: 400;
+        line-height: 25px;
+        font-size: larger;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(0, 0, 0);
+    }
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+    .contentw ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 60px;
+        position: relative;
+    }
+}
